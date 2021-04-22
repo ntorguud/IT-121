@@ -1,11 +1,12 @@
-// Create a variable called msg to hold a new message
-var msg = 'Sign up to receive our newsletter for 10% off!';
- 
-// Create a function to update the content of the element whose id attribute has a value of message
-function updateMessage() {
-  var el = document.getElementById('message');
-  el.textContent = msg;
-}
- 
-// Call the function
-updateMessage();
+// create vars to store greeting and first name
+var greeting = "Howdy";
+var firstName = "Molly";
+
+// create message to be displayed to un
+var welcomeMessage = greeting + ' ' + firstName + '!';
+
+// get element with ID of 'greeting' and 
+var el = document.getElementById('greeting');
+
+// replace text content with message 
+el.textContent = welcomeMessage;
