@@ -5,9 +5,13 @@ var hotel = {
     booked : 25,
  
     checkAvailability : function() {
-      return this.rooms - this.booked; // Need "this" because inside function
+      return this.rooms - this.booked; // Need "this" (refers keyword) because inside function
     }
   };
+
+//   function checkAvailability() {
+//       return hotel.rooms - hotel.booked;
+//   }      This function works as same as the method checkAvailabilty in the hotel object !!!
   
   // Update the HTML
   var elName = document.getElementById('hotelName'); // Get element
