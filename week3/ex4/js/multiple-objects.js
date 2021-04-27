@@ -1,8 +1,9 @@
 // Create the template for objects that are hotels
-function Hotel(name, rooms, booked) {
+function Hotel(name, rooms, booked, pool) {
     this.name = name;
     this.rooms = rooms;
     this.booked = booked;
+    this.pool = pool;
     this.checkAvailability = function() {
       return this.rooms - this.booked;
     };
@@ -10,9 +11,9 @@ function Hotel(name, rooms, booked) {
   
   
   // Create two hotel objects
-  var quayHotel = new Hotel('Quay', 40, 25);
-  var parkHotel = new Hotel('Park', 120, 77);
-  var queensHotel = new Hotel('Queens', 1000, 26);
+  var quayHotel = new Hotel('Quay', 40, 25, true);
+  var parkHotel = new Hotel('Park', 120, 77, false);
+  var queensHotel = new Hotel('Queens', 1000, 26, TextTrackCue);
   
   
   // Update the HTML for the page

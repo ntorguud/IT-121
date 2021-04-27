@@ -25,6 +25,9 @@ var elRooms = document.getElementById('rooms');    // Get element
 elRooms.textContent = "Rooms Available: " + hotel.checkAvailability(); // Update HTML with propery of the object
 
 var elPool = document.getElementById('pool'); // Get element
-elPool.textContent = "Pool Available: " + pool.checkAvailability(); // Update HTML with propery of the object
+elRooms.textContent = "Pool Available: " + hotel.pool; // Update HTML with propery of the object
+
+var elGym = document.getElementById('gym'); // Get element
+elRooms.textContent = "Gym Available: " + hotel.gym; // Update HTML with propery of the object
 
 console.log(checkAvailability);
