@@ -9,6 +9,10 @@ var hotel = {
     }
 };
 
+hotel.gym = false;
+hotel.pool = true;
+delete hotel.name;
+
 //   function checkAvailability() {
 //       return hotel.rooms - hotel.booked;
 //   }      This function works as same as the method checkAvailabilty in the hotel object !!!
@@ -18,5 +22,9 @@ var elName = document.getElementById('hotelName'); // Get element
 elName.textContent = "Hotel Name: " + hotel.name;                   // Update HTML with property of the object
 
 var elRooms = document.getElementById('rooms');    // Get element
+elRooms.textContent = "Rooms Available: " + hotel.checkAvailability(); // Update HTML with propery of the object
+
+var elPool = document.getElementById('pool'); // Get element
+elPool.textContent = "Pool Available: " + pool.checkAvailability(); // Update HTML with propery of the object
 
 console.log(checkAvailability);
