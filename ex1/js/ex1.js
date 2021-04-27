@@ -1,7 +1,8 @@
+// instantiate and assign values to variables
+var message = "Welcome to my calculator";
 var x = 5;
 var y = 7;
-
 var total = x + y;
 
-var el = document.getElementById('message');
-el.textContent = 'The sum of ' +  x + ' + ' + y  + ' is : ' + total;
+document.getElementById('message').textContent = message;
+document.getElementById('math').textContent = 'The sum of ' +  x + ' + ' + y  + ' is : ' + total;
