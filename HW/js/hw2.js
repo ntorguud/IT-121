@@ -7,5 +7,5 @@ var num2 = prompt("Enter second number");
 var total = parseInt(num1) + parseInt(num2);
 
 
-document.getElementById('message').textContent = 'Hi, ' + message + '!' + ' The sum of ' + num1 + ' + ' + num2 + ' is : ' + total;
-// document.getElementById('message').textContent = `Hi, ${message} ! The sum of ${num1} + ${num2} is : ${total}`;
+document.getElementById('message').textContent = 'Hi, ' + message + '!' + ' The sum of ' + num1 + ' + ' + num2 + ' is ' + total;
+// document.getElementById('message').textContent = `Hi, ${message} ! The sum of ${num1} + ${num2} is ${total}`;
