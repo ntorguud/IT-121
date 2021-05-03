@@ -1,35 +1,7 @@
-class TV {
-    constructor(brandName) {
-        this.brandName = brandName;
-        this.channel = 1;
-        this.volume = 25;
-    }
+var value = Math.ceil((Math.random() * 200) + 1);
 
-    getBrandName() {
-        return this.brandName;
-    }
+var today = new Date();
 
-    volumeUp() {
-        // this.volume = this.volume + 1;
-        // this.volume++;
-        this.volume += 1;
-    }
+var stockPriceDiv = document.getElementById('stockPrice');
 
-    volumeDown() {
-        this.volume -= 1;
-    }
-
-    channelUp() {
-        this.channel += 1;
-    }
-
-    channelDown() {
-            this.channel -= 1;
-    }            
-}
-
-var appleTvRemote = new TV("Apple TV");
-
-// console.log(appleTvRemote.getBrandName())
-
-appleTvRemote.volumeDown()
+stockPriceDiv.innerHTML = 'I have earned around $' + value + ' from AMC stocks by ' + today
