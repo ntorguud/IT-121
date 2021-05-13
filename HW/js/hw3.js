@@ -1,7 +1,15 @@
-var value = Math.ceil((Math.random() * 200) + 1);
+function TV(brand, model, yrMade) {
+    this.brand = brand;
+    this.model = model;
+    this.yrMade = yrMade;
+    this.tvAvailable = function() {
+        return '<p>Brand: ' + this.brand + ' Model: ' + this.model 
+    +' Year made: ' + this.yrMade + '</p>'
+    };
+}
 
-var today = new Date();
+var tv1 = new TV('Samsung', 'XX1', 2018);
+var tv2 = new TV('Panasonic', 'XX2', 2019);
 
-var stockPriceDiv = document.getElementById('stockPrice');
-
-stockPriceDiv.textContent = 'I have earned around $' + value + ' from AMC stocks by ' + today
+document.getElementById('tv1').innerHTML = tv1.tvAvailable();
+document.getElementById('tv2').innerHTML = tv2.tvAvailable();
