@@ -1,7 +1,7 @@
-const MAX_VOLUME = 100;
-const MIN_VOLUME = 0;
-const MAX_CHANNEL = 300;
-const MIN_CHANNEL = 0; 
+// const MAX_VOLUME = 100;
+// const MIN_VOLUME = 0;
+// const MAX_CHANNEL = 300;
+// const MIN_CHANNEL = 0; 
 
 class TV {
     constructor(brandName) {
@@ -15,7 +15,7 @@ class TV {
     }
 
     volumeUp() {
-        if(this.volume <= MAX_VOLUME) {
+        if(this.volume <= 100) {
         // this.volume = this.volume + 1;
         // this.volume++;
         this.volume += 1;
@@ -55,4 +55,3 @@ var appleTvRemote = new TV("Apple TV");
 // console.log(appleTvRemote.getBrandName())
 
 appleTvRemote.volumeDown()
-
