@@ -1,18 +1,33 @@
-function SmartPhone(brand, model, yrMade) {
+function SmartPhone(brand, model, yrMade, imageUrl) {
     this.brand = brand;
     this.model = model;
     this.yrMade = yrMade;
-    this.phonesAvailable = function() {
-        return '<p>Brand: ' + this.brand + ' Model: ' + this.model 
-    +' Year made: ' + this.yrMade + '</p>'
+    this.imageUrl = imageUrl;
+
+    this.getPhoneCard = function() {
+        return `<div class="card"> 
+            <div width="100px"> 
+                <img src="${this.imageUrl}">
+            </div>
+            <div class="description">
+                <p>Brand: ${this.brand} </p>
+                <p>Model: ${this.model} </p>
+                <p>Year made: ${this.yrMade} </p>
+            </div>
+        </div>`;
     };
 }
 
-var phone1 = new SmartPhone('Apple', 'iPhone12 Pro', 2020);
-var phone2 = new SmartPhone('Samsung', 'Galaxy S21', 2021);
-var phone3 = new SmartPhone('LG', 'Stylo 6', 2021);
+var phone1 = new SmartPhone('Apple', 'iPhone12 Pro', 2020, "images/iphone.png");
+var phone2 = new SmartPhone('Samsung', 'Galaxy S21', 2021, "images/S21.png");
+var phone3 = new SmartPhone('LG', 'Stylo 6', 2021, "images/stylo6.png");
 
-document.getElementById('phone1').innerHTML = phone1.phonesAvailable();
-document.getElementById('phone2').innerHTML = phone2.phonesAvailable();
-document.getElementById('phone3').innerHTML = phone3.phonesAvailable();
+document.getElementById('productlist').innerHTML += phone1.getPhoneCard();
+document.getElementById('productlist').innerHTML += phone2.getPhoneCard();
+document.getElementById('productlist').innerHTML += phone3.getPhoneCard();
 
+// var phones = [phone1,phone2,phone3];
+
+// for(var i = 0; i<phones.length; i++) {
+//     document.getElementById('productlist').innerHTML += phones[i].phonesAvailable3();
+// }
