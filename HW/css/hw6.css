@@ -15,7 +15,6 @@ body {
         background-color: #db9d28;
         color: #fff;
         border-top: 1px solid #e6ba2c;
-        border-bottom: 1px solid #df950b;
         font-size: 24px;
         letter-spacing: .05em;
         list-style-type: none;
@@ -28,9 +27,8 @@ body {
         background-color: #db9d28;
         color: #fff;
         text-shadow: 2px 2px 1px #9f593f;
-        border-top: 1px solid #e6ba2c;
-        border-bottom: 1px solid #df950b;}
-     
+        border-top: 1px solid #e6ba2c;}
+
     .chic {
         background-color: #23dbdb;
         color: #fff;
