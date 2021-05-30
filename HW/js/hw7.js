@@ -1,25 +1,24 @@
-var mpgForm = document.getElementById('form');
+var elMpg = document.getElementById('calculateMPG');
 
 function calculateMPG(event) {
     event.preventDefault(); 
 
-    var mpgForm = event.target;
-    var milesInput = mpgForm.querySelector('#miles').value; // In my understanding, querySelector is good if it is not div id
-    var gallonsInput = mpgForm.querySelector('#gallons').value;
+    var elMpg = event.target;
+    var milesInput = document.getElementById('miles').value; 
+    var gallonsInput =document.getElementById('gallons').value;
 
-    //form vaildation: if inputs are not a number, alert the user, and reset the form
     if (isNaN(milesInput) || isNaN(gallonsInput)) {
         alert('Both entries must be numeric');
-        mpgForm.reset();
+        elMpg.reset();
     }
 
     else {
         var mpg = milesInput / gallonsInput;
-        var mpgOutput = mpgForm.querySelector('#mpg');
+        var mpgOutput = document.getElementById('mpg');
         mpgOutput.value = mpg.toFixed(2); //round to one decimal place
 }
 }
 
 window.onload = function() {
-    mpgForm.addEventListener('submit', calculateMPG);
+    elMpg.addEventListener('submit', calculateMPG);
 }
