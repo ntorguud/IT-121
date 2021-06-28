@@ -215,6 +215,30 @@ footer {
     margin-top: 30px;
 }
 
+.toggler { 
+    width: 500px; 
+    height: 200px; 
+    margin: auto;
+}
+
+#button { 
+    padding: .5em 1em; 
+    text-decoration: none; 
+}
+
+#effect { 
+    width: 240px; 
+    height: 170px; 
+    padding: 0.4em; 
+    position: relative; 
+}
+
+#effect h3 { 
+    margin: 0; 
+    padding: 0.4em; 
+    text-align: center; 
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .main {

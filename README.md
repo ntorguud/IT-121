@@ -7,3 +7,5 @@ evaluation - decision - loops
 
 
 # https://www.photopea.com/
+
+@installed - look up installed extensions
