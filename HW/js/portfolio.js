@@ -28,6 +28,17 @@ $( function() {
     $( "#button" ).on( "click", function() {
       runEffect();
     });
+
+
  
     $( "#effect" ).hide();
   } );
+
+  var sum = 0;
+  var limit = 1000;
+  for(var i = 1; i <= limit; i++)
+  {
+    sum = sum + i;
+  }
+
+  console.log('1-' + limit + ' хүртэлх тооны нийлбэр бол ' + sum);
