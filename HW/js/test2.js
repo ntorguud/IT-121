@@ -36,15 +36,14 @@ else if( age >15)
 }
 else if(age > 6)
 {
-    console.log("Elementary or middle school student.")
+    console.log("Elementary or middle school student.");
 }
 else
 {
     console.log("You're too young.");
 }
-
-alert("You're " + age + " years old.");
 }
 
 else{
-    alert("Ta tursun onoo zuv oruulna uu?")}; 
+    alert("Ta tursun onoo zuv oruulna uu?");
+}
