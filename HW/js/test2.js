@@ -9,14 +9,15 @@ ageJenn -= 5;
 ageJenn *= 2;
 
 var yearOfBirth = prompt('What year were you born?');
-var now = newDate().getFullYear(); //prebuilt object
-var age = now - yearOfBirth;
 
 if(yearOfBirth !== null)
 {
-/* Checking Condition 
+    var now = new  Date().getFullYear(); //prebuilt object
+    var age = now - yearOfBirth;
 
-if (Condition === true)
+    /* Checking Condition 
+
+    if (Condition === true)
 {
     Do this
 }
@@ -28,22 +29,23 @@ else
 
 if(age > 18)
 {
-    console.log("You're old enough.");
+    alert("You're old enough.");
 }
-else if( age >15)
+else if( age > 15)
 {
-    console.log("High school student.");
+    alert("High school student.");
 }
 else if(age > 6)
 {
-    console.log("Elementary or middle school student.");
+    alert("Elementary or middle school student.");
 }
 else
 {
-    console.log("You're too young.");
+    alert("You're too young.");
 }
 }
 
-else{
+else
+{
     alert("Ta tursun onoo zuv oruulna uu?");
 }
