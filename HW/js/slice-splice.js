@@ -30,7 +30,7 @@ z.push('Jan');
 z.push('Feb');
 z.push('Mar');
 
-var y =[1, true, 'hello', {name: Jenny}, null]; ==
+var y =[1, true, 'hello', {name: Jenny}, null]; // ===
 var y1 = new Array('h1', 'hello', false, 234);
 
 var course = {
