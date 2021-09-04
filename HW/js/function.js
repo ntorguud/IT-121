@@ -48,3 +48,24 @@ module(-225);
 mod(112);
 
 //if you wanna use this result in the next uildel, return mod;
+
+
+//Expression type
+var module = function(number) {
+    var mode;
+    if (number < 0) mode = -number;
+    else mode = number;
+
+    alert(number + " 's module is " + mode); 
+return module;
+}
+ 
+var addModules = function(x, y, z) {
+    var sum = module(x) + module(y) + module(z);
+    return sum;
+}
+
+addModules(-1, 2, -4);
+
+//or var totalSum = addModules(-1, 2, -4) + addModules(-100, -9002, 894);
+// console.log(totalSum);
