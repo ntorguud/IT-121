@@ -8,11 +8,11 @@ var c1 = {
     discount: 26900,
     address: 'San Francisco, CA 94104',
     info: function() {
-        alert(this.author.address.location + '-d amidardag ' + this.author.name + '-iin 2019 ond gargasan "' + this.name + '" surgalt ni ' + this.price + ' unetei bolovch yag odoogoor ' + this.discount + ' bolj hyamdarsan bna.');
-    }
+        console.log(this.author.address.location + '-d amidardag ' + this.author.name + '-iin 2019 ond gargasan "' + this.name + '" surgalt ni ' + this.price + ' unetei bolovch yag odoogoor ' + this.discount + ' bolj hyamdarsan bna.');
+    },
     computeHour: function() {
         return Math.round(this.totalMin/60);
-    } 
+    },
     computeMin: function() {
         return this.totalMin % 60;
     }
@@ -26,11 +26,11 @@ var c2 = {
     price: 146000,
     discount: 26900,
     info: function() {
-        alert('\n\n' + this.author.address.location + '-d amidardag ' + this.author.name + '-iin 2019 ond gargasan "' + this.name + '" surgalt ni ' + this.price + ' unetei bolovch yag odoogoor ' + this.discount + ' bolj hyamdarsan bna.');
-    }
+        console.log('\n\n' + this.author.address.location + '-d amidardag ' + this.author.name + '-iin 2019 ond gargasan "' + this.name + '" surgalt ni ' + this.price + ' unetei bolovch yag odoogoor ' + this.discount + ' bolj hyamdarsan bna.');
+    },
     computeHour: function() {
         return Math.round(this.totalMin/60);
-    } 
+    },
     computeMin: function() {
         return this.totalMin % 60;
     }

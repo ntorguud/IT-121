@@ -20,9 +20,9 @@ var k = m.splice(1, 10); //1-r index-s hoish 10 elementiig ustgana.
 var l = m.splice(3, 3); // 3-r index-s hoish 3 elementiig ustgana.
 
 var x = m.slice(1, 3); // 1-r index-s ehleed 3-r index hurtel copy-doj avna. m arrayg evdehgui.
-console.log(x);
+alert(x);
 
-console.log(m);
+alert(m);
 
 //Array can be started from empty
 var z = [];
@@ -39,21 +39,25 @@ var course = {
     lessons: [
         {
             name: 'Энэ сургалтаар бид юу сурч, эзэмших вэ?',
-            length: '09:02'
+            length: '09:02',
+            tags: ['Intro', 'History', 'Plan']
         },
         {
             name: 'Өгөгдлийн сангийн үндэс - SQL хэл гэж юу вэ?',
-            length: '08:10' 
+            length: '08:10',
+            tags: ['SQL', 'About', 'Application']
         },
         {
             name: 'Нэгдүгээр бүлэг: Өгөгдлийн сан буюу DataBase -ийн бүтэц, ажиллах зарчим',
-            length: '07:31'
+            length: '07:31',
+            tags: ['Structure', 'Procedure']
         },
         {
             name: 'SQL хэлний давуу тал, сул тал',
-            length: '07:43'
+            length: '07:43',
+            tags: ['Advantages', 'Disadvantages']
         }
     ]
 }
 
-console.log(course.name + ' surgaltiin une ' + course.price + ' tug bna.\nHicheel #1 ' + course.lessons[0] + ' nertei.\nHicheel #2 ' + course.lessons[1] + ' nertei.\nHicheel #3 ' + course.lessons[2] + ' nertei.\nHicheel #4 ' + course.lessons[3] + ' nertei.');
+alert(course.name + ' surgaltiin une ' + course.price + ' tug bna.\nHicheel #1 ' + course.lessons[0].name + ' nertei videonii urt ni ' + course.lessons[0].length + ': ' + course.lessons[0].tags[0] + '\nHicheel #2 ' + course.lessons[1].name + ' nertei videonii urt ni ' + course.lessons[1].length + ': ' + course.lessons[1].tags[0] + '\nHicheel #3 ' + course.lessons[2].name + ' nertei videonii urt ni ' + course.lessons[2].length + ': ' + course.lessons[2].tags[0] + '\nHicheel #4 ' + course.lessons[3] + ' nertei videonii urt ni ' + course.lessons[3].length + ': ' + course.lessons[3].tags[0]);

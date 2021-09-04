@@ -6,7 +6,7 @@
 var h1 = {
     name: 'Jenny',
     job: 'programmer',
-    hobby; 'volleyball',
+    hobby: 'volleyball',
     location: 'San Francisco'
 }
 
@@ -16,8 +16,8 @@ var h2 = {
     hobby: 'yoga'
 }
 
-alert(h1.job + ' mergejiltei ' + h1.name + 'iin hobby ni '+ h1.hobby);
-alert(h2.job + ' mergejiltei ' + h2.name + '-iin hobby ni ' + h2.hobby);
+console.log(h1.job + ' mergejiltei ' + h1.name + 'iin hobby ni '+ h1.hobby);
+console.log(h2.job + ' mergejiltei ' + h2.name + '-iin hobby ni ' + h2.hobby);
 
 
 var c1 = {
@@ -40,7 +40,7 @@ var c2 = {
     address: 'Seattle, WA 98122'
 }
 
-alert(c2.author.address.location + '-d amidardag ' + c2.author.name + '-iin 2019 ond gargasan "' + c2.name + '" surgalt ni ' + c2.price + ' unetei bolovch yag odoogoor ' + c2.discount + ' bolj hyamdarsan bna.');
+console.log(c2.author.address.location + '-d amidardag ' + c2.author.name + '-iin 2019 ond gargasan "' + c2.name + '" surgalt ni ' + c2.price + ' unetei bolovch yag odoogoor ' + c2.discount + ' bolj hyamdarsan bna.');
 
 /* console.log(c2['author']['address']['city']); == 
 console.log(c2.author.address.city); */
