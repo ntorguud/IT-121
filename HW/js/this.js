@@ -10,9 +10,9 @@ function hello() {
 }
 
 var p1 = {
-    name: 'Bold';
+    name: 'Bold',
     printThis: function() {
-        console.log(this); //uur ym hevlene.
+        console.log(this) //uur ym hevlene.
 
         function secondFunction() {
             console.log(this); //[object Window] gej hevlene.
@@ -22,7 +22,7 @@ var p1 = {
 }
 
 var p2 = {
-    name: 'Nara';
+    name: 'Nara'
 }
 //Method borrowing
 p2.printThis = p1.printThis;
