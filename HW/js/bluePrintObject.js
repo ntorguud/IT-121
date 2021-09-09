@@ -1,4 +1,4 @@
-//Zagvar objects- Plue print obejects
+//Zagvar objects- Plue print objects ni object uusgeh neg arga ym. (Better than dan function uusgeh method)
 // var p1 = {
 //     name: 'Jenny',
 //     job: 'programmer',
@@ -55,9 +55,8 @@ soldier.fight = function() {
 var spy = Object.create(hun);
 spy.name = 'Sarah';
 
-
 console.log(soldier.name); //Dooroos n shatlan haih - prototype chaining hiigeed hamgiin oirhon bgaa name-iig olno.
-console.log(soldier.__proto__.__proto__); //Object.
+console.log(soldier.__proto__.__proto__); //Object. --> deeshee --> deeshee
 soldier.haragdah(); //Jenny materi haragdlaa. gej hevlene cuz dooroosoo ehelj neree haina. Override hiigdsen.
 soldier.hoolloh();
 soldier.hudluh();
