@@ -1,7 +1,9 @@
 function Animal(ner) {
     // var obj = Object.create(Animal.prototype);   // new keywordiig hereglehguigeer ingej ene code-iig bichih bsn.
     this.name = ner;
-};
+}; //Constructor function-ii neriig Upper case-r ehelj jiriin function-s yalgana. Object uusgehiin tuld. 
+//Duudahdaa urd n new gej bichij bj duudna.
+
 
 //Runtime shuud bichne.
 Animal.prototype.hoolloh = function() {
