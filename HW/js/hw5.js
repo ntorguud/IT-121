@@ -7,12 +7,12 @@ var inputTotal = 0, inputCount = 0, average, entry;
 //     inputTotal += entry;
 //     inputCount ++; /* inputCount +=1; */
 
-do{
+do {
     entry = parseInt(prompt("Enter test score\nOr enter 999 to end entries"));
     inputTotal += entry;
     inputCount ++;
     average = ((inputTotal - 999) / (inputCount -1));
-}while(entry != 999);
+} while (entry != 999);
 
 // need to use an alert to display average score
 
