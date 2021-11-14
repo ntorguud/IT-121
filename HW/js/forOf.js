@@ -73,5 +73,5 @@ let index = ages.findIndex(el => el >= 18);
 console.log(`Oldson index: ${index}`);
 
 //Tovchoor
-console.log(ages.findIndex(el => el >= 18); //18aas deeshih nasnii index-iig olj bna.
-console.log(ages.find(el =. el >= 18)); //nasnii toog olj bna.
+console.log(ages.findIndex(el => el >= 18)); //18aas deeshih nasnii index-iig olj bna.
+console.log(ages.find(el => el >= 18)); //nasnii toog olj bna.
