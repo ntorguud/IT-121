@@ -47,3 +47,26 @@ moveTo(50, 50)
     .then(() => moveTo(20, 100))
     .then(() => moveTo(100, 200))
     .then(() => moveTo(2, 10))
+
+
+
+
+    ///////
+    let imageRecognition = imagePath => {
+        return new Promise((resolve, reject) => {
+        console.log(`Promise ajillaj bna.`);
+    
+        //Zurag tanih
+    
+        //Amjilttai bolbol resolve functioniig duudna.
+        resolve(); //=result
+    
+        //Asuudal uusvel refect functioniig duudna.
+        reject(`Zurag het tom bna.`); //=reject
+    });
+    }
+    
+    imageRecognition(downloads/bg3.png)
+        .then(result => console.log(`Amjilttai ${result}`))
+        .catch(error => console.log(`Asuudal garlaa ${error}`));
+    
