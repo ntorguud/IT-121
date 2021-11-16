@@ -35,7 +35,7 @@ getRecipes()
 getRecipe(12)
 .then(r => console.log(r));
 
-//Promise chaining
+//Promise chaining. Daraalsan huseltuudiig ilgeeh
 getRecipes()
 .then(ids => {
     console.log(ids);
@@ -49,3 +49,41 @@ getRecipes()
 .catch(error => {
     console.log(`Aldaa garlaa. ${error}`);
  });
+
+
+ //Zereg ajillauulay gevel:
+ getRecipes()
+ .then(r => {
+    console.log(r); 
+    return getRecipe(r[0]);
+ });
+
+ getRecipe()
+ .then(r => {
+    console.log(r);
+    return getAuthorRecipe(r.author);
+ });
+
+ getAuthorRecipe()
+ .then(r => {
+    console.log(r);
+ });
+
+
+
+
+ //ES8 -Ecmascript2017 async, await
+async function getInfo() {
+    try {
+        const ids = await getRecipes();
+        console.log(ids);
+        const recipe = await getRecipe(ids[0]);
+        console.log(recipe);
+        const nextRecipe = await getAuthorRecipe(recipe.author);
+        console.log(nextRecipe);
+    } catch(error) {
+        console.log(`Aldaa garlaa.`);
+    }   
+}
+
+getInfo();
