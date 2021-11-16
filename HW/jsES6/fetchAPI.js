@@ -25,11 +25,22 @@ function getWeather(id) {
         let today = data.consolidated_weather[0];
 
         console.log(today.min_temp, today.max_temp);
-    
-        let json = JSON.parse(r);
-        console.log(`Joriin zohiogch n ${json.author}`);
     });
 }
-
 getWeather(44418);
 getWeather(2487956);
+
+
+///////////////////
+async function getWeatherAsync(id) {
+    const result = await fetch(`https://api.allorigins.win/get?url=https://https://www.metaweather.com/api/location/ ${id} /`);
+
+    const json = await result.json();
+    data = JSON.parse(json.contents);
+    
+    let today = data.consolidated_weather[0];
+
+    console.log(today.min_temp, today.max_temp);
+}
+getWeatherAsync(44418);
+getWeatherAsync(2487956);
